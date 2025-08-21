@@ -1,3 +1,5 @@
+import Button from '../atoms/Button'
+
 export default function Hero() {
   return (
     <header id="accueil" className="hero bg-base-200 py-10">
@@ -19,12 +21,12 @@ export default function Hero() {
             Rejoignez une explosion de couleurs, de fun et d'énergie ! La Color Run, c’est bien plus qu’une course : c’est une fête où chaque kilomètre devient un arc-en-ciel de bonheur. Que vous soyez coureur aguerri ou amateur de bonne humeur, vous êtes au bon endroit.
           </p>
           <div className="flex space-x-4">
-            <a href="#decouvrir-courses" className="btn btn-secondary">
+            <Button to="#decouvrir-courses" className="btn-secondary">
               Découvrir les courses
-            </a>
-            <a href="#inscription" className="btn btn-primary">
+            </Button>
+            <Button to="#inscription" className="btn-primary">
               Inscrivez-vous maintenant
-            </a>
+            </Button>
           </div>
         </div>
       </div>

@@ -1,2 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
+body {
+	font-family: "Work Sans", sans-serif;
+}
+h1,
+h2 {
+	font-family: Oi, sans-serif;
+}
