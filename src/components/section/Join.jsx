@@ -1,3 +1,5 @@
+import Button from '../atoms/Button'
+
 export default function Join() {
   return (
     <section id="join" className="container mx-auto px-4 py-12">
@@ -17,12 +19,12 @@ export default function Join() {
             En échange, vous vivrez une expérience enrichissante et recevrez un kit souvenir pour votre engagement. Merci de votre aide précieuse !
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#rejoindre-equipe" className="btn btn-primary">
+            <Button to="#rejoindre-equipe" className="btn-primary">
               Rejoindre l’équipe bénévole
-            </a>
-            <a href="#en-savoir-plus" className="btn btn-secondary">
+            </Button>
+            <Button to="#en-savoir-plus" className="btn-secondary">
               En savoir plus sur le bénévolat
-            </a>
+            </Button>
           </div>
         </div>
         <div className="w-2/3 lg:w-1/3 mb-10 lg:mb-0">

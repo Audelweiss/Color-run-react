@@ -1,24 +1,18 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Concept from './components/Concept'
-import Agenda from './components/Agenda'
-import Enroll from './components/Enroll'
-import Join from './components/Join'
-import Footer from './components/Footer'
+import Hero from './components/section/Hero'
+import Concept from './components/section/Concept'
+import Agenda from './components/section/Agenda'
+import Enroll from './components/section/Enroll'
+import Join from './components/section/Join'
 import './index.css'
 
 export default function App() {
   return (
     <>
-      <Navbar />
       <Hero />
-      <main>
-        <Concept />
-        <Agenda />
-        <Enroll />
-        <Join />
-      </main>
-      <Footer />
+      <Concept />
+      <Agenda />
+      <Enroll />
+      <Join />
     </>
   )
 }

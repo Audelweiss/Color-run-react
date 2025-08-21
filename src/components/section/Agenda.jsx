@@ -1,4 +1,5 @@
-import EventCard from './EventCard'
+import EventCard from '../organims/EventCard'
+import Button from '../atoms/Button'
 
 const events = [
   {
@@ -38,9 +39,9 @@ export default function Agenda() {
         ))}
       </div>
       <div className="mt-6 text-center">
-        <a href="#voir-plus-evenements" className="btn btn-secondary">
+        <Button to="#voir-plus-evenements" className="btn-secondary">
           Voir plus d’événements
-        </a>
+        </Button>
       </div>
     </section>
   )

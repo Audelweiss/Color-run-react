@@ -1,17 +1,20 @@
+import { Link } from 'react-router-dom'
+import Button from '../atoms/Button'
+
 export default function Navbar() {
   return (
     <nav className="container mx-auto navbar bg-base-100 items-center">
       <div className="navbar-start">
-        <a
+        <Link
           className="btn btn-ghost lg:hover:bg-transparent normal-case text-xl items-center"
-          href="#"
+          to="/"
         >
           <img
             src="/logo.png"
             alt="Logo"
             className="h-12 lg:h-20 w-auto mr-2"
           />
-        </a>
+        </Link>
       </div>
       <div className="navbar-end">
         <div className="dropdown static lg:hidden flex items-center">
@@ -31,54 +34,54 @@ export default function Navbar() {
               />
             </svg>
           </label>
-          <a className="btn btn-primary" href="#s-inscrire">
+          <Button className="btn-primary" to="#s-inscrire">
             S’inscrire
-          </a>
+          </Button>
           <ul
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-full left-0 top-16 z-50"
           >
             <li>
-              <a href="#accueil">Accueil</a>
+              <Link to="#accueil">Accueil</Link>
             </li>
             <li>
-              <a href="#concept">Concept</a>
+              <Link to="#concept">Concept</Link>
             </li>
             <li>
-              <a href="#agenda">Agenda</a>
+              <Link to="#agenda">Agenda</Link>
             </li>
             <li>
-              <a href="#join">Devenir bénévole</a>
+              <Link to="#join">Devenir bénévole</Link>
             </li>
             <li>
-              <a className="btn btn-outline my-4" href="#se-connecter">
+              <Button className="btn-outline my-4" to="#se-connecter">
                 Se connecter
-              </a>
+              </Button>
             </li>
           </ul>
         </div>
         <ul className="menu menu-horizontal hidden lg:flex items-center space-x-4">
           <li>
-            <a href="#accueil">Accueil</a>
+            <Link to="#accueil">Accueil</Link>
           </li>
           <li>
-            <a href="#concept">Concept</a>
+            <Link to="#concept">Concept</Link>
           </li>
           <li>
-            <a href="#agenda">Agenda</a>
+            <Link to="#agenda">Agenda</Link>
           </li>
           <li>
-            <a href="#join">Devenir bénévole</a>
+            <Link to="#join">Devenir bénévole</Link>
           </li>
           <li>
-            <a className="btn btn-outline" href="#se-connecter">
+            <Button className="btn-outline" to="#se-connecter">
               Se connecter
-            </a>
+            </Button>
           </li>
           <li>
-            <a className="btn btn-primary" href="#s-inscrire">
+            <Button className="btn-primary" to="#s-inscrire">
               S’inscrire
-            </a>
+            </Button>
           </li>
         </ul>
       </div>

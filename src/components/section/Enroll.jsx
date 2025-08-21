@@ -1,3 +1,5 @@
+import Button from '../atoms/Button'
+
 export default function Enroll() {
   return (
     <section id="enroll" className="py-12 mt-12 container mx-auto px-4">
@@ -29,12 +31,12 @@ export default function Enroll() {
             Alors, qu’attendez-vous ? Faites partie des milliers de coureurs qui partagent cette aventure incroyable !
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#inscription" className="btn btn-primary">
+            <Button to="#inscription" className="btn-primary">
               S’inscrire maintenant
-            </a>
-            <a href="#en-savoir-plus" className="btn btn-secondary">
+            </Button>
+            <Button to="#en-savoir-plus" className="btn-secondary">
               En savoir plus sur l’inscription
-            </a>
+            </Button>
           </div>
         </div>
       </div>
